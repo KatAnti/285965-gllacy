@@ -1,17 +1,19 @@
-body{
-font-family:'Roboto', 'Arial', sans-serif;
-font-size:16px;
-line-height:22px;
-color:#ffffff;
-font-weight:normal;
-background-color:#cccccc;
+body {
+	font-family:'Roboto', 'Arial', sans-serif;
+	font-size:16px;
+	line-height:22px;
+	color:#ffffff;
+	font-weight:normal;
+	background-color:#cccccc;
 }
-h1{
-font-size:35px;
-line-height:41px;
+
+h1 {
+	font-size:35px;
+	line-height:41px;
 }
-.banner_title{
-font-size:60px;
-line-height:60px;
-font-weight:bold;
+
+.banner_title {
+	font-size:60px;
+	line-height:60px;
+	font-weight:bold;
 }
