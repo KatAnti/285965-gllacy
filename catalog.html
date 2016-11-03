@@ -44,12 +44,12 @@
 							</ul>
 						</nav>
 						<div class="user_block">
-							<a class="translucent search" href="#"></a>
-							<form action="https://echo.htmlacademy.ru" method="post">
+							<a class="translucent search" href="#">Поиск</a>
+							<form style="display:none;" action="https://echo.htmlacademy.ru" method="post">
 								<input type="search" name="s" placeholder="Что ищем?" class="searching">
 							</form>
 							<a class="translucent login" href="#">Вход</a>
-							<form action="https://echo.htmlacademy.ru" method="post">
+							<form style="display:none;" action="https://echo.htmlacademy.ru" method="post">
 								<input type="text" name="email" placeholder="Электронная почта">
 								<input type="password" name="password" placeholder="Пароль">
 								<div>
@@ -63,7 +63,7 @@
 							<a class="translucent basket" href="#">
 								2 товара
 							</a>
-							<form action="https://echo.htmlacademy.ru" method="post">
+							<form style="display:none;" action="https://echo.htmlacademy.ru" method="post">
 									<table class="mini_cart">
 										<caption>Итого: 750 руб.</caption>
 										<tr>
@@ -107,10 +107,10 @@
 				<div>
 					<ul class="breadcrumbs">
 						<li>
-							<a href="#">Главная</a> >
+							<a href="#">Главная</a> &#187;
 						</li>
 						<li>
-							<a href="#">Каталог</a> >
+							<a href="#">Каталог</a> &#187;
 						</li>
 						<li>
 							Сливочное
@@ -120,14 +120,16 @@
 					<div class="filters">
 						<form action="https://echo.htmlacademy.ru" method="post">
 							<div class="filter_row">
-								Сортировка:
-								<select class="translucent" name="sort">
-									<option>по популярности</option>
-									<option>сначала недорогие</option>
-									<option>сначала дорогие</option>
-									<option>по жирности</option>
-								</select>
-								<label>
+								<div class='sort_by'>
+									Сортировка:
+									<select class="translucent" name="sort">
+										<option>по популярности</option>
+										<option>сначала недорогие</option>
+										<option>сначала дорогие</option>
+										<option>по жирности</option>
+									</select>
+								</div>
+								<label class='price_range'>
 									Цена: 100 руб. – 500 руб.
 									<input class="translucent" type="range" min="0" max="500" step="50" value="0">
 								</label>
@@ -169,7 +171,7 @@
 										<label for="jams">джемы</label>
 									</div>
 								</fieldset>
-								<input type="button" class="translucent" value="Применить">
+								<input type="button" class="translucent sort_apply" value="Применить">
 							</div>
 						</form>
 					</div>
@@ -299,22 +301,22 @@
 						</div>
 					</div>
 					<ul class="pagination">
-						<li><</li>
+						<li>&lsaquo;</li>
 						<li>1</li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
 						<li><a href="#">4</a></li>
 						<li><a href="#">5</a></li>
-						<li><a href="#">></a></li>
+						<li><a href="#">&rsaquo;</a></li>
 					</ul>
 				</div>
 				<footer class="main_footer">
 					<div class="container">
 						<div class="footer_social">
-							<a class="social_btn social_btn_twit" href="#"></a>
-							<a class="social_btn social_btn_inst" href="#"></a>
-							<a class="social_btn social_btn_fb" href="#"></a>
-							<a class="social_btn social_btn_vk" href="#"></a>
+							<a class="social_btn social_btn_twit" href="#">Т</a>
+							<a class="social_btn social_btn_inst" href="#">И</a>
+							<a class="social_btn social_btn_fb" href="#">Ф</a>
+							<a class="social_btn social_btn_vk" href="#">В</a>
 						</div>
 						<ul class="footer_menu">
 							<li>

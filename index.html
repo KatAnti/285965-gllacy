@@ -44,12 +44,12 @@
 							</ul>
 						</nav>
 						<div class="user_block">
-							<a class="translucent search" href="#"></a>
-							<form action="https://echo.htmlacademy.ru" method="post">
+							<a class="translucent search" href="#">Поиск</a>
+							<form style="display:none;" action="https://echo.htmlacademy.ru" method="post">
 								<input type="search" name="s" placeholder="Что ищем?" class="searching">
 							</form>
 							<a class="translucent login" href="#">Вход</a>
-							<form action="https://echo.htmlacademy.ru" method="post">
+							<form style="display:none;" action="https://echo.htmlacademy.ru" method="post">
 								<input type="text" name="email" placeholder="Электронная почта">
 								<input type="password" name="password" placeholder="Пароль">
 								<div>
@@ -84,7 +84,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="slider_item">
+								<div class="slider_item" style="display:none;">
 									<div class="slider_item_content">
 										<span class='banner_title'>Шоколадный пломбир и лимонный сорбет</span>
 										<a href="#" class="buttons slider_btn">
@@ -92,7 +92,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="slider_item">
+								<div class="slider_item" style="display:none;">
 									<div class="slider_item_content">
 										<span class='banner_title'>Пломбир с помадкой и клубничный щербет</span>
 										<a href="#" class="buttons slider_btn">
@@ -167,15 +167,15 @@
 					<div class="advantage technologies">
 						Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 					</div>
+					<div class="advantage farm">
+						Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+					</div>
 					<div class="advantage ingredients">
 						Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального,
 						экологически чистого сырья.
 					</div>
-					<div class="advantage farm">
-						Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-					</div>
 					<div class="advantage packaging">
-						Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+						Доставка нашего мороженого до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 					</div>
 				</section>
 				<div class="info_banners_content">
@@ -196,11 +196,13 @@
 				</div>
 			</div>
 			<div class="map">
-				<div class="mark"></div>
-				<div class="contacts_form">
-				Адрес главного офиса и
-				<br>
-				офлайн магазина:
+				<div class="container_center map">
+					<div class="mark"></div>
+					<div class="contacts_form">
+					Адрес главного офиса и
+					<br>
+					офлайн магазина:
+					<br>
 					<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
 					<p>
 					Для заказов по телефону:
@@ -210,16 +212,17 @@
 					(с 10 до 20 ежедневно) 
 					</p>
 					<a href="" class="buttons feedback">Форма обратной связи</a>
+					</div>
 				</div>
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OMr-VRDbanzAu-eCIQ20A_D-IeuR6e7b&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
 			</div>
-			<footer class="main_footer">
-				<div class="container_center">
+			<div class="container_center">
+				<footer class="main_footer">
 					<div class="footer_social">
-						<a class="social_btn social_btn_twit" href="#">Твитер</a>
-						<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
-						<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-						<a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+						<a class="social_btn social_btn_twit" href="#">Т</a>
+						<a class="social_btn social_btn_inst" href="#">И</a>
+						<a class="social_btn social_btn_fb" href="#">Ф</a>
+						<a class="social_btn social_btn_vk" href="#">В</a>
 					</div>
 					<ul class="footer_menu">
 						<li>
@@ -242,9 +245,9 @@
 							&#169;2016
 						</p>
 					</div>
-				</div>
-			</footer>
-			<div class="feedback_popup">
+				</footer>
+			</div>
+			<div style="display:none;" class="feedback_popup">
 				<input type="button" name="close" class="close_popup">
 				<span class='popup_title'>Мы обязательно вам ответим!</span>
 				<form action="https://echo.htmlacademy.ru" method="post">
