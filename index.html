@@ -66,48 +66,48 @@
 						</div>
 					</div>
 					<div class="header_bottom">
+						 10 до 20, ежедневно
+						<span class="phone_number">8 812 450-25-25</span>
 					</div>
 				</header>
-				<section>
-					<div class="slider">
-						<div class="slider_inner">
-							<div class="slider_slides">
-								<div class="slider_item">
-									<div class="slider_item_content">
-										<span class="banner_title">Крем-брюле и пломбир с малиновым джемом</span>
-										<a href="#" class="buttons slider_btn">
-											Давайте оба!
-										</a>
-									</div>
+				<div class="slider">
+					<div class="slider_inner">
+						<div class="slider_slides">
+							<div class="slider_item">
+								<div class="slider_item_content">
+									<div class="banner_title">Крем-брюле и пломбир с малиновым джемом</div>
+									<a href="#" class="buttons slider_btn">
+										Давайте оба!
+									</a>
 								</div>
-								<div class="slider_item" style="display:none;">
-									<div class="slider_item_content">
-										<span class="banner_title">Шоколадный пломбир и лимонный сорбет</span>
-										<a href="#" class="buttons slider_btn">
-											Давайте оба!
-										</a>
-									</div>
+							</div>
+							<div class="slider_item" style="display:none;">
+								<div class="slider_item_content">
+									<div class="banner_title">Шоколадный пломбир и лимонный сорбет</div>
+									<a href="#" class="buttons slider_btn">
+										Давайте оба!
+									</a>
 								</div>
-								<div class="slider_item" style="display:none;">
-									<div class="slider_item_content">
-										<span class="banner_title">Пломбир с помадкой и клубничный щербет</span>
-										<a href="#" class="buttons slider_btn">
-											Давайте оба!
-										</a>
-									</div>
+							</div>
+							<div class="slider_item" style="display:none;">
+								<div class="slider_item_content">
+									<div class="banner_title">Пломбир с помадкой и клубничный щербет</div>
+									<a href="#" class="buttons slider_btn">
+										Давайте оба!
+									</a>
 								</div>
 							</div>
 						</div>
-						<input type="radio" id="btn-1" name="toggle" checked>
-						<input type="radio" id="btn-2" name="toggle">
-						<input type="radio" id="btn-3" name="toggle">
-						<div class="slider-controls">
-							<label for="btn-1"></label>
-							<label for="btn-2"></label>
-							<label for="btn-3"></label>
-						</div>
 					</div>
-				</section>
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+				</div>
 				<div class="info_banners_content clearfix">
 					<div class="content_banner content_banner_rasperberry">
 						<h2>Малинка даром!</h2>
@@ -174,7 +174,7 @@
 						Доставка нашего мороженого до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 					</div>
 				</section>
-				<div class="info_banners_content">
+				<div class="info_banners_content clearfix">
 					<div class="content_banner content_banner_blog">
 						Новое в нашем блоге
 						<a href="#" class="blog_ttl">
@@ -197,19 +197,23 @@
 				</div>
 				<div class="container_center clearfix">
 					<div class="contacts_form">
-					Адрес главного офиса и
-					<br>
-					офлайн магазина:
-					<br>
-					<span class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-					<p>
-					Для заказов по телефону:
-					<br>
-					<span class="bold">8 812 450-25-25</span>
-					<br>
-					(с 10 до 20 ежедневно) 
-					</p>
-					<a href="#" class="buttons feedback">Форма обратной связи</a>
+						Адрес главного офиса и
+						<br>
+						офлайн магазина:
+						<br>
+						<span class="bold">
+							ул. Большая Конюшенная 19/8, Санкт-Петербург
+						</span>
+						<p>
+						Для заказов по телефону:
+						<br>
+						<span class="bold">
+							8 812 450-25-25
+						</span>
+						<br>
+						(с 10 до 20 ежедневно) 
+						</p>
+						<a href="#" class="buttons feedback">Форма обратной связи</a>
 					</div>
 				</div>
 			</div>
@@ -244,16 +248,14 @@
 					</div>
 				</footer>
 			</div>
-			<div class="feedback_popup">
-				<input type="button" name="close" class="close_popup" value='&times;'>
-				<span class="popup_title">Мы обязательно вам ответим!</span>
-				<form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
-					<input type="text" name="name" placeholder="Как вас зовут?">
-					<input type="text" name="email" placeholder="Ваша почта для ответа?">
-					<textarea rows="7">Напишите что-нибудь...</textarea>
-					<input type="submit" name="enter" value="Отправить" class="buttons send">
-				</form>
-			</div>
+			<form class="feedback_popup clearfix" action="https://echo.htmlacademy.ru" method="post">
+				<div class="close_popup">&times</div>
+				<div class="popup_title">Мы обязательно вам ответим!</div>
+				<input type="text" name="name" placeholder="Как вас зовут?">
+				<input type="text" name="email" placeholder="Ваша почта для ответа?">
+				<textarea rows="7">Напишите что-нибудь...</textarea>
+				<input type="submit" name="enter" value="Отправить" class="buttons send">
+			</form>
 		</div>
 	</body>
 </html>
