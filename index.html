@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<div class="page_wrapper">
@@ -39,35 +41,45 @@
 									<a href="#">Доставка и оплата</a>
 								</li>
 								<li>
-									<a href="#">О компании</a>
+									<a href="#">О Компании</a>
 								</li>
 							</ul>
 						</nav>
 						<div class="user_block">
-							<a class="translucent search" href="#">Поиск</a>
-							<form class="searching" action="https://echo.htmlacademy.ru" method="post">
-								<input type="search" name="s" placeholder="Что ищем?">
-							</form>
-							<a class="translucent login" href="#">Вход</a>
-							<form class="login_form clearfix" action="https://echo.htmlacademy.ru" method="post">
-								<input type="text" name="email" placeholder="Электронная почта">
-								<input type="password" name="password" placeholder="Пароль">
-								<div>
-									<input type="submit" name="enter" value="Войти" class="buttons enter">
-									<div class="registration_forgotten">
-										<a href="#">Забыли пароль?</a>
-										<a href="#">Новая регистрация</a>
-									</div>
+							<div class="form_container search_form_container">
+								<a class="translucent search" href="#"></a>
+								<div class="searching_form_wrap">
+									<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+										<input type="search" name="s" placeholder="Что ищем?">
+									</form>
 								</div>
-							</form>
-							<a class="translucent basket" href="#">
-								Пусто
-							</a>
+							</div>
+							<div class="form_container login_form_container">
+								<a class="translucent login" href="#">Вход</a>
+								<div class="login_form_wrap">
+									<form class="login_form clearfix" action="https://echo.htmlacademy.ru" method="post">
+										<input type="text" name="email" placeholder="Электронная почта">
+										<input type="password" name="password" placeholder="Пароль">
+										<div>
+											<input type="submit" name="enter" value="Войти" class="buttons enter">
+											<div class="registration_forgotten">
+												<a href="#">Забыли пароль?</a>
+												<a href="#">Новая регистрация</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="form_container cart_form_container">
+								<a class="translucent cart" href="#">
+									Пусто
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="header_bottom">
-						 10 до 20, ежедневно
-						<span class="phone_number">8 812 450-25-25</span>
+						С 10 до 20, ежедневно
+						<div class="phone_number">8 812 450-25-25</div>
 					</div>
 				</header>
 				<div class="slider">
@@ -113,7 +125,7 @@
 						<h2>Малинка даром!</h2>
 						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 						<a href="#" class="buttons offers_btn">
-							Давайте оба!
+							Хочу варенья!
 						</a>
 					</div>
 					<div class="content_banner content_banner_choco">
@@ -129,7 +141,7 @@
 						<div class="product_img">
 							<img src="img/product_img_01.jpg" width="267" height="267"  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 							<div class="product_label_hit"></div>
-							<div class="product_price"><span class="price_text">310Р</span>/кг</div>
+							<div class="product_price"><span class="price_text">310&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</div>
@@ -137,7 +149,7 @@
 						<div class="product_img">
 							<img src="img/product_img_02.jpg" width="267" height="267"  alt="Сливочно-кофейное с кусочками шоколада">
 							<div class="product_label_hit"></div>
-							<div class="product_price"><span class="price_text">380Р</span>/кг</div>
+							<div class="product_price"><span class="price_text">380&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</div>
@@ -145,7 +157,7 @@
 						<div class="product_img">
 							<img src="img/product_img_03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							<div class="product_label_hit"></div>
-							<div class="product_price"><span class="price_text">355Р</span>/кг</div>
+							<div class="product_price"><span class="price_text">355&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					</div>
@@ -153,7 +165,7 @@
 						<div class="product_img">
 							<img src="img/product_img_04.jpg" width="267" height="267"  alt="Сливочное крем-брюле с карамельной подливкой">
 							<div class="product_label_hit"></div>
-							<div class="product_price"><span class="price_text">415Р</span>/кг</div>
+							<div class="product_price"><span class="price_text">415&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</div>
@@ -175,19 +187,22 @@
 					</div>
 				</section>
 				<div class="info_banners_content clearfix">
-					<div class="content_banner content_banner_blog">
+					<div class="content_banner content_banner_blog clearfix">
 						Новое в нашем блоге
+						<br>
 						<a href="#" class="blog_ttl">
 							10  способов сервировки фруктовых щербетов к столу
 						</a>
 					</div>
 					<div class="content_banner content_banner_subcribe">
-						Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. 
-						Честно =)
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<input type="text" name="email" placeholder="Электронная почта">
-							<input type="submit" name="send" value="Отправить">
-						</form>
+						<div class="subcribe_back">
+							Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. 
+							Честно =)
+							<form class="subcribe_form" action="https://echo.htmlacademy.ru" method="post">
+								<input type="text" name="email" placeholder="Электронная почта">
+								<input class="buttons" type="submit" name="send" value="Отправить">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -220,10 +235,10 @@
 			<div class="container_center">
 				<footer class="main_footer clearfix">
 					<div class="footer_social">
-						<a class="social_btn social_btn_twit" href="#">Т</a>
-						<a class="social_btn social_btn_inst" href="#">И</a>
-						<a class="social_btn social_btn_fb" href="#">Ф</a>
-						<a class="social_btn social_btn_vk" href="#">В</a>
+						<a class="social_btn_twit" href="#">Т</a>
+						<a class="social_btn_inst" href="#">И</a>
+						<a class="social_btn_fb" href="#">Ф</a>
+						<a class="social_btn_vk" href="#">В</a>
 					</div>
 					<ul class="footer_menu">
 						<li>
@@ -242,7 +257,7 @@
 					<div class="footer_copyright">
 						<img src="img/html_academy_logo.png" width="109" height="38"  alt="Html Academy">
 						<p>Сделано в:
-							<a class="btn" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+							<a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
 							&#169;2016
 						</p>
 					</div>
