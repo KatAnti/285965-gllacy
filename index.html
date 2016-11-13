@@ -8,6 +8,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
+		<input type="radio" id="btn_1" name="toggle" checked>
+		<input type="radio" id="btn_2" name="toggle">
+		<input type="radio" id="btn_3" name="toggle">
 		<div class="page_wrapper">
 			<div class="container_center clearfix">
 				<header class="header_main clearfix">
@@ -83,41 +86,34 @@
 					</div>
 				</header>
 				<div class="slider">
-					<div class="slider_inner">
-						<div class="slider_slides">
-							<div class="slider_item">
-								<div class="slider_item_content">
-									<div class="banner_title">Крем-брюле и пломбир с малиновым джемом</div>
-									<a href="#" class="buttons slider_btn">
-										Давайте оба!
-									</a>
-								</div>
-							</div>
-							<div class="slider_item" style="display:none;">
-								<div class="slider_item_content">
-									<div class="banner_title">Шоколадный пломбир и лимонный сорбет</div>
-									<a href="#" class="buttons slider_btn">
-										Давайте оба!
-									</a>
-								</div>
-							</div>
-							<div class="slider_item" style="display:none;">
-								<div class="slider_item_content">
-									<div class="banner_title">Пломбир с помадкой и клубничный щербет</div>
-									<a href="#" class="buttons slider_btn">
-										Давайте оба!
-									</a>
-								</div>
-							</div>
+					<div class="slider_item" id="slide1">
+						<div class="slider_item_content">
+							<div class="banner_title">Крем-брюле и пломбир с малиновым джемом</div>
+							<a href="#" class="buttons slider_btn">
+								Давайте оба!
+							</a>
 						</div>
 					</div>
-					<input type="radio" id="btn-1" name="toggle" checked>
-					<input type="radio" id="btn-2" name="toggle">
-					<input type="radio" id="btn-3" name="toggle">
-					<div class="slider-controls">
-						<label for="btn-1"></label>
-						<label for="btn-2"></label>
-						<label for="btn-3"></label>
+					<div class="slider_item" id="slide2">
+						<div class="slider_item_content">
+							<div class="banner_title">Шоколадный пломбир и лимонный сорбет</div>
+							<a href="#" class="buttons slider_btn">
+								Давайте оба!
+							</a>
+						</div>
+					</div>
+					<div class="slider_item" id="slide3">
+						<div class="slider_item_content">
+							<div class="banner_title">Пломбир с помадкой и клубничный щербет</div>
+							<a href="#" class="buttons slider_btn">
+								Давайте оба!
+							</a>
+						</div>
+					</div>
+					<div class="slider_controls">
+						<label for="btn_1"></label>
+						<label for="btn_2"></label>
+						<label for="btn_3"></label>
 					</div>
 				</div>
 				<div class="info_banners_content clearfix">
@@ -189,7 +185,6 @@
 				<div class="info_banners_content clearfix">
 					<div class="content_banner content_banner_blog clearfix">
 						Новое в нашем блоге
-						<br>
 						<a href="#" class="blog_ttl">
 							10  способов сервировки фруктовых щербетов к столу
 						</a>
