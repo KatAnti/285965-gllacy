@@ -48,68 +48,62 @@
 							</ul>
 						</nav>
 						<div class="user_block">
-							<div class="form_container search_form_container">
-								<a class="translucent search" href="#"></a>
-								<div class="searching_form_wrap">
-									<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
-										<input type="search" name="s" placeholder="Что ищем?">
-									</form>
-								</div>
+							<a class="translucent search userblock_link" href="#"></a>
+							<div class="searching_form_wrap userblock_form_wrap">
+								<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+									<input type="search" name="s" placeholder="Что ищем?">
+								</form>
 							</div>
-							<div class="form_container login_form_container">
-								<a class="translucent login" href="#">Вход</a>
-								<div class="login_form_wrap">
-									<form class="login_form clearfix" action="https://echo.htmlacademy.ru" method="post">
-										<input type="text" name="email" placeholder="Электронная почта">
-										<input type="password" name="password" placeholder="Пароль">
-										<div>
-											<input type="submit" name="enter" value="Войти" class="buttons enter">
-											<div class="registration_forgotten">
-												<a href="#">Забыли пароль?</a>
-												<a href="#">Новая регистрация</a>
-											</div>
+							<a class="translucent login userblock_link" href="#">Вход</a>
+							<div class="login_form_wrap userblock_form_wrap">
+								<form class="login_form clearfix" action="https://echo.htmlacademy.ru" method="post">
+									<input type="text" name="email" placeholder="Электронная почта">
+									<input type="password" name="password" placeholder="Пароль">
+									<div>
+										<input type="submit" name="enter" value="Войти" class="buttons enter">
+										<div class="registration_forgotten">
+											<a href="#">Забыли пароль?</a>
+											<a href="#">Новая регистрация</a>
 										</div>
-									</form>
-								</div>
+									</div>
+								</form>
 							</div>
-							<div class="form_container cart_form_container">
-								<a class="translucent cart" href="#">
-									2 товара
-								</a>
-								<div class="cart_form_wrap">
-									<form class="cart_form" action="https://echo.htmlacademy.ru" method="post">
-											<table class="mini_cart">
-												<caption>Итого: 750 руб.</caption>
-												<tr>
-													<td>
-														<button class="delete_purchase" type="button" title="Удалить">Удалить</button>
-													</td>
-													<td>
-														<div class="mini_cart_img">
-															<img src="img/mini_cart_product_01.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-														</div>
-													</td>
-													<td>Пломбир с апельсиновым джемом</td>
-													<td>1,5 кг х <span class="mini_cart_price">200 руб.</span></td>
-													<td>300 руб.</td>
-												</tr>
-												<tr>
-													<td>
-														<button class="delete_purchase" type="button" title="Удалить">Удалить</button>
-													</td>
-													<td>
-														<div class="mini_cart_img">
-															<img src="img/mini_cart_product_01.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-														</div>
-													</td>
-													<td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-													<td>1,5 кг х <span class="mini_cart_price">300 руб.</span></td>
-													<td>450 руб.</td>
-												</tr>
-											</table>
-											<a class="buttons formalise" href="#">Оформить заказ</a>
-									</form>
-								</div>
+							<a class="translucent cart userblock_link" href="#">
+								2 товара
+							</a>
+							<div class="cart_form_wrap userblock_form_wrap">
+								<form class="cart_form" action="https://echo.htmlacademy.ru" method="post">
+										<table class="mini_cart">
+											<caption>Итого: 750 руб.</caption>
+											<tr>
+												<td>
+													<button class="delete_purchase" type="button" title="Удалить">Удалить</button>
+												</td>
+												<td>
+													<div class="mini_cart_img">
+														<img src="img/mini_cart_product_01.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+													</div>
+												</td>
+												<td>Пломбир с апельсиновым джемом</td>
+												<td>1,5 кг х <span class="mini_cart_price">200 руб.</span></td>
+												<td>300 руб.</td>
+											</tr>
+											<tr>
+												<td>
+													<button class="delete_purchase" type="button" title="Удалить">Удалить</button>
+												</td>
+												<td>
+													<div class="mini_cart_img">
+														<img src="img/mini_cart_product_01.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+													</div>
+												</td>
+												<td>Клубничный пломбир с присыпкой  из белого шоколада</td>
+												<td>1,5 кг х <span class="mini_cart_price">300 руб.</span></td>
+												<td>450 руб.</td>
+											</tr>
+										</table>
+										<a class="buttons formalise" href="#">Оформить заказ</a>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -133,11 +127,11 @@
 					<h1>Сливочное мороженое</h1>
 					<form class="filters clearfix" action="https://echo.htmlacademy.ru" method="post">
 						<div class='filter_wrap'>
-							<label class='filter_label'>
+							<label for="sort_by_select" class='filter_label'>
 								Сортировка:
 							</label>
 							<div class="translucent">
-								<select class="sort_by_select" name="sort">
+								<select class="sort_by_select" id="sort_by_select" name="sort">
 									<option>по популярности</option>
 									<option>сначала недорогие</option>
 									<option>сначала дорогие</option>
