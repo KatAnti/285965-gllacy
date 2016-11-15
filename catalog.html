@@ -82,7 +82,7 @@
 												<caption>Итого: 750 руб.</caption>
 												<tr>
 													<td>
-														<button class="delete_purchase" type="button" tittle="Удалить">Удалить</button>
+														<button class="delete_purchase" type="button" title="Удалить">Удалить</button>
 													</td>
 													<td>
 														<div class="mini_cart_img">
@@ -95,7 +95,7 @@
 												</tr>
 												<tr>
 													<td>
-														<button class="delete_purchase" type="button" tittle="Удалить">Удалить</button>
+														<button class="delete_purchase" type="button" title="Удалить">Удалить</button>
 													</td>
 													<td>
 														<div class="mini_cart_img">
@@ -121,7 +121,7 @@
 				<div class='inner_content_wrap'>
 					<ul class="breadcrumbs">
 						<li>
-							<a href="#">Главная</a>
+							<a href="index.html">Главная</a>
 						</li>
 						<li>
 							<a href="#">Каталог</a>
@@ -132,10 +132,10 @@
 					</ul>
 					<h1>Сливочное мороженое</h1>
 					<form class="filters clearfix" action="https://echo.htmlacademy.ru" method="post">
-						<label class='filter_wrap'>
-							<span class='filter_label'>
+						<div class='filter_wrap'>
+							<label class='filter_label'>
 								Сортировка:
-							</span>
+							</label>
 							<div class="translucent">
 								<select class="sort_by_select" name="sort">
 									<option>по популярности</option>
@@ -144,16 +144,16 @@
 									<option>по жирности</option>
 								</select>
 							</div>
-						</label>
-						<label class="filter_wrap">
+						</div>
+						<div class="filter_wrap">
 							<span class='filter_label'>
-								Цена: <input class="range_value" type="text" name="from" value="100"> руб. – <input class="range_value" type="text" name="from" value="500"> руб.
+								Цена: <input class="range_value" type="text" name="from" value="100"> руб. – <input class="range_value" type="text" name="to" value="500"> руб.
 							</span>
 							<div class="translucent range">
 								<div class="range_bar">
 								</div>
 							</div>
-						</label>
+						</div>
 						<fieldset class="fat filter_wrap">
 							<legend class='filter_label'>
 								Жирность:
@@ -161,22 +161,22 @@
 							<div class="translucent">
 								<input id="no_fat" type="radio" name="fat" value="0">
 								<label for="no_fat">
-									<div class='fat_indicator'></div>
+									<span class='fat_indicator'></span>
 									0%
 								</label>
 								<input id="10_fat" type="radio" name="fat" value="10">
 								<label for="10_fat">
-									<div class='fat_indicator'></div>
+									<span class='fat_indicator'></span>
 									до 10%
 								</label>
 								<input id="30_fat" type="radio" name="fat" value="30">
 								<label for="30_fat">
-									<div class='fat_indicator'></div>
+									<span class='fat_indicator'></span>
 									до 30%
 								</label>
 								<input id="more_fat" type="radio" name="fat" value=">30">
 								<label for="more_fat">
-									<div class='fat_indicator blocked'></div>
+									<span class='fat_indicator blocked'></span>
 									выше 30%
 								</label>
 							</div>
@@ -188,27 +188,27 @@
 							<div class="translucent">
 								<input type="checkbox" name="chocolate" id="choco" value="chocolate">
 								<label for="choco">
-									<div class='additive_indicator blocked'></div>
+									<span class='additive_indicator blocked'></span>
 									шоколадные
 								</label>
 								<input type="checkbox" name="sugar powder" id="sugar" value="sugar powder">
 								<label for="sugar">
-									<div class='additive_indicator'></div>
+									<span class='additive_indicator'></span>
 									сахарные присыпки
 								</label>
 								<input type="checkbox" name="fruits" id="fruits" value="fruits">
 								<label for="fruits">
-									<div class='additive_indicator'></div>
+									<span class='additive_indicator'></span>
 									фрукты
 								</label>
 								<input type="checkbox" name="syrups" id="syrups" value="syrups">
 								<label for="syrups">
-									<div class='additive_indicator'></div>
+									<span class='additive_indicator'></span>
 									сиропы
 								</label>
 								<input type="checkbox" name="jams" id="jams" value="jams">
 								<label for="jams">
-									<div class='additive_indicator'></div>
+									<span class='additive_indicator'></span>
 									джемы
 								</label>
 							</div>
@@ -222,9 +222,7 @@
 								<div class="product_price"><span class="price_text">310&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-							<div class="product_hover_back">
-									<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -232,9 +230,7 @@
 								<div class="product_price"><span class="price_text">380&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочно-кофейное с кусочками шоколада</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -242,9 +238,7 @@
 								<div class="product_price"><span class="price_text">355&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -252,9 +246,7 @@
 								<div class="product_price"><span class="price_text">415&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -262,9 +254,7 @@
 								<div class="product_price"><span class="price_text">325&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочное с брусничным джемом</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -272,9 +262,7 @@
 								<div class="product_price"><span class="price_text">410&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочно-черничное с цельными ягодами черники </a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -282,9 +270,7 @@
 								<div class="product_price"><span class="price_text">375&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -292,9 +278,7 @@
 								<div class="product_price"><span class="price_text">320&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочное с шоколадной стружкой</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -302,9 +286,7 @@
 								<div class="product_price"><span class="price_text">440&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочно-ванильное с кусочками шоколада</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -312,9 +294,7 @@
 								<div class="product_price"><span class="price_text">435&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочноe с ментоловым сиропом</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -322,9 +302,7 @@
 								<div class="product_price"><span class="price_text">355&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочное с кусочками черного шоколада</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 						<div class="product">
 							<div class="product_img">
@@ -332,9 +310,7 @@
 								<div class="product_price"><span class="price_text">420&#8381;</span>/кг</div>
 							</div>
 							<a href="#">Сливочное с мятным сиропом</a>
-							<div class="product_hover_back">
-								<a class="buttons quick_view" href="#">Быстрый просмотр</a>
-							</div>
+							<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 						</div>
 					</div>
 					<ul class="pagination">

@@ -27,7 +27,7 @@
 											<a class="submenu_title first_submenu_title" href="#">Новинки</a>
 										</li>
 										<li>
-											<a class="submenu_title" href="#">Сливочное</a>
+											<a class="submenu_title" href="catalog.html">Сливочное</a>
 										</li>
 										<li>
 											<a class="submenu_title" href="#">Щербеты</a>
@@ -140,6 +140,7 @@
 							<div class="product_price"><span class="price_text">310&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 					</div>
 					<div class="product">
 						<div class="product_img">
@@ -148,6 +149,7 @@
 							<div class="product_price"><span class="price_text">380&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 					</div>
 					<div class="product">
 						<div class="product_img">
@@ -156,6 +158,7 @@
 							<div class="product_price"><span class="price_text">355&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 					</div>
 					<div class="product">
 						<div class="product_img">
@@ -164,6 +167,7 @@
 							<div class="product_price"><span class="price_text">415&#8381;</span>/кг</div>
 						</div>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<a class="buttons quick_view" href="#">Быстрый просмотр</a>
 					</div>
 				</section>
 				<section class="about_us">
@@ -202,9 +206,7 @@
 				</div>
 			</div>
 			<div class="map">
-				<div class="map_wrap">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OMr-VRDbanzAu-eCIQ20A_D-IeuR6e7b&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false">
-					</script>
+				<div class="map_wrap" id="map">
 				</div>
 				<div class="container_center clearfix">
 					<div class="contacts_form">
@@ -260,13 +262,16 @@
 				</footer>
 			</div>
 			<form class="feedback_popup clearfix" action="https://echo.htmlacademy.ru" method="post">
-				<div class="close_popup">&times</div>
+				<button class="close_popup" type="button" title="Закрыть"></button>
 				<div class="popup_title">Мы обязательно вам ответим!</div>
 				<input type="text" name="name" placeholder="Как вас зовут?">
 				<input type="text" name="email" placeholder="Ваша почта для ответа?">
 				<textarea rows="7">Напишите что-нибудь...</textarea>
 				<input type="submit" name="enter" value="Отправить" class="buttons send">
 			</form>
+			<div class="feedback_popup_overlay"></div>
 		</div>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="js/map.js"></script>
 	</body>
 </html>
