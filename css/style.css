@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	min-width: 1183px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -73,6 +74,12 @@ input[type="search"] {
 	color: #999999;
 }
 
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover {
+	border: 2px solid #d3d3d2;
+}
+
 .translucent {
 	padding: 5px 10px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -119,11 +126,11 @@ input[type="search"] {
 }
 
 .page_wrapper::before {
-	background-image: url("../img/main_banner_02.png.");
+	background-image: url("../img/main_banner_02.png");
 }
 
 .page_wrapper::after {
-	background-image: url("../img/main_banner_03.png.");
+	background-image: url("../img/main_banner_03.png");
 }
 
 .header_main {
@@ -133,7 +140,7 @@ input[type="search"] {
 }
 
 .clearfix:after {
-	content: "";
+	content: " ";
 	display: table;
 	clear: both;
 }
@@ -283,7 +290,7 @@ li:last-child .submenu_title:hover {
 	color: #323232;
 }
 
-.user_block {
+.userblock {
 	float: right;
 	width: 262px;
 	margin-top: 13px;
@@ -291,7 +298,7 @@ li:last-child .submenu_title:hover {
 	font-weight: 400;
 }
 
-.user_block a {
+.userblock a {
 	font-size: 14px;
 	line-height: 16px;
 	text-decoration: none;
@@ -343,7 +350,7 @@ li:last-child .submenu_title:hover {
 }
 
 .userblock_link::before {
-	content: "";
+	content: " ";
 	position: absolute;
 	top: 7px;
 	background-image: url("../img/sprite_icons.png");
@@ -563,7 +570,7 @@ body > input[type="radio"] {
 }
 
 .slider_item_content {
-	width: 670px;
+	width: 700px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -598,15 +605,15 @@ body > input[type="radio"] {
 
 #btn_1:checked ~ .page_wrapper {
 	background-color: #849d8f;
-	background-image: url("../img/main_banner_01.png.");
+	background-image: url("../img/main_banner_01.png");
 }
 #btn_2:checked ~ .page_wrapper {
 	background-color: #8996a6;
-	background-image: url("../img/main_banner_02.png.");
+	background-image: url("../img/main_banner_02.png");
 }
 #btn_3:checked ~ .page_wrapper {
 	background-color: #9d8b84;
-	background-image: url("../img/main_banner_03.png.");
+	background-image: url("../img/main_banner_03.png");
 }
 
 #btn_1:checked ~ .page_wrapper #slide1,
@@ -677,7 +684,7 @@ body > input[type="radio"] {
 
 .subcribe_back {
 	min-height: 152px;
-	padding: 28px 21px ;
+	padding: 28px 21px;
 	background-color: #f8f7f4;
 	border-radius: 15px;
 }
@@ -746,7 +753,7 @@ body > input[type="radio"] {
 }
 
 .product:hover::after {
-	content: "";
+	content: " ";
 	position: absolute;
 	top: -5px;
 	right: -13px;
@@ -1340,7 +1347,7 @@ margin-left: 7px;
 /* Pop up styles */
 
 .feedback_popup_overlay {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1350,7 +1357,7 @@ margin-left: 7px;
 }
 
 .feedback_popup {
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 340px;
 	width: 430px;
@@ -1359,6 +1366,30 @@ margin-left: 7px;
 	border-radius: 8px;
 	padding: 15px 25px 25px;
 	z-index: 20;
+}
+
+.popup_label {
+	display: none;
+	position: absolute;
+	left: 10px;
+	top: -15px;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.popup_label_value {
+	display: block;
+	color: #999999;
+}
+
+.popup_input:focus ~ label {
+	display: block;
+	color: #5b9ddf;
+}
+
+.overlay_show,
+.feedback_popup_show {
+	display: block;
 }
 
 .feedback_popup input[type="text"] {
@@ -1415,6 +1446,11 @@ margin-left: 7px;
 .send {
 	float: right;
 }
+
+.input_show_label{
+	position: relative;
+}
+
 
 
 /* login form styles */
