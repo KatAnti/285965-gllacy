@@ -20,7 +20,7 @@ feedback.addEventListener("click", function(event) {
 		email.value = storage_email;
 		question.focus();
 	} else {
-		name.focus();
+		fio.focus();
 	}
 });
 
@@ -28,12 +28,15 @@ close.addEventListener("click", function(event) {
 event.preventDefault();
 popup.classList.remove("feedback_popup_show");
 overlay.classList.remove("overlay_show");
+popup.classList.remove("modal-error");
 });
 
 popup.addEventListener("submit", function(event) {
 	if (!fio.value || !email.value || !question.value) {
 		event.preventDefault();
-		console.log("Введите имя, адрес почты и свой вопрос");
+		popup.classList.remove("feedback_popup_error");
+		popup.offsetWidth = popup.offsetWidth;
+		popup.classList.add("feedback_popup_error");
 	} 
 	else {
 		localStorage.setItem("name", fio.value);
@@ -47,6 +50,7 @@ if (event.keyCode===27) {
 	if (popup.classList.contains("feedback_popup_show") && overlay.classList.contains("overlay_show")) {
 		popup.classList.remove("feedback_popup_show");
 		overlay.classList.remove("overlay_show");
+		popup.classList.remove("modal-error");
 		}
 	}
 });
@@ -55,6 +59,7 @@ overlay.addEventListener("click", function(event) {
 	if (popup.classList.contains("feedback_popup_show") && overlay.classList.contains("overlay_show")) {
 		popup.classList.remove("feedback_popup_show");
 		overlay.classList.remove("overlay_show");
+		popup.classList.remove("modal-error");
 	}
 });
 
