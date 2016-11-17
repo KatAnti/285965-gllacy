@@ -1133,6 +1133,10 @@ input.range_value {
 	color: #ffffff;
 }
 
+input.range_value:hover {
+	border: none;
+}
+
 .range_bar {
 	position: relative;
 	width: 192px;
