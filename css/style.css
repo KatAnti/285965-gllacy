@@ -75,8 +75,42 @@ input[type="search"] {
 	font-weight: bold;
 }
 
-input::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
+input::-moz-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
+input:-moz-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
 input:-ms-input-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
+textarea::-moz-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
+textarea:-moz-placeholder {
+	color: #999999;
+	font-weight: normal;
+}
+
+textarea:-ms-input-placeholder {
 	color: #999999;
 	font-weight: normal;
 }
