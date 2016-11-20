@@ -60,7 +60,7 @@
 								<form class="login_form clearfix" action="https://echo.htmlacademy.ru" method="post">
 									<input type="text" name="email" placeholder="Электронная почта">
 									<input type="password" name="password" placeholder="Пароль">
-									<div>
+									<div class="clearfix">
 										<input type="submit" name="enter" value="Войти" class="buttons enter">
 										<div class="registration_forgotten">
 											<a href="#">Забыли пароль?</a>
@@ -192,7 +192,7 @@
 							Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. 
 							Честно =)
 							<form class="subcribe_form" action="https://echo.htmlacademy.ru" method="post">
-								<input type="text" name="email" placeholder="Электронная почта">
+								<input type="text" name="email" placeholder="Электронная почта" required>
 								<input class="buttons" type="submit" name="send" value="Отправить">
 							</form>
 						</div>
@@ -200,8 +200,7 @@
 				</div>
 			</div>
 			<div class="map">
-				<div class="map_wrap" id="map">
-				</div>
+				<div class="map_wrap" id="map"></div>
 				<div class="container_center clearfix">
 					<div class="contacts_form">
 						Адрес главного офиса и
@@ -248,7 +247,8 @@
 					</ul>
 					<div class="footer_copyright">
 						<img src="img/html_academy_logo.png" width="109" height="38"  alt="Html Academy">
-						<p>Сделано в:
+						<p>
+							Сделано в:
 							<a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
 							&#169;2016
 						</p>
@@ -274,7 +274,6 @@
 			<input type="submit" name="enter" value="Отправить" class="buttons send">
 		</form>
 		<div class="feedback_popup_overlay"></div>
-		
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/map.js"></script>
 		<script src="js/scripts.min.js"></script>

@@ -26,7 +26,7 @@
 											<a class="submenu_title first_submenu_title" href="#">Новинки</a>
 										</li>
 										<li>
-											<a class="submenu_title current" href="#">Сливочное</a>
+											<a class="submenu_title current">Сливочное</a>
 										</li>
 										<li>
 											<a class="submenu_title" href="#">Щербеты</a>
@@ -59,7 +59,7 @@
 								<form class="login_form clearfix" action="https://echo.htmlacademy.ru" method="post">
 									<input type="text" name="email" placeholder="Электронная почта">
 									<input type="password" name="password" placeholder="Пароль">
-									<div>
+									<div class="clearfix">
 										<input type="submit" name="enter" value="Войти" class="buttons enter">
 										<div class="registration_forgotten">
 											<a href="#">Забыли пароль?</a>
@@ -68,7 +68,7 @@
 									</div>
 								</form>
 							</div>
-							<a class="translucent cart userblock_link" href="#">
+							<a class="translucent cart full userblock_link" href="#">
 								2 товара
 							</a>
 							<div class="cart_form_wrap userblock_form_wrap">
@@ -112,7 +112,7 @@
 						<div class="phone_number">8 812 450-25-25</div>
 					</div>
 				</header>
-				<div class='inner_content_wrap'>
+				<div class="inner_content_wrap">
 					<ul class="breadcrumbs">
 						<li>
 							<a href="index.html">Главная</a>
@@ -126,11 +126,11 @@
 					</ul>
 					<h1>Сливочное мороженое</h1>
 					<form class="filters clearfix" action="https://echo.htmlacademy.ru" method="post">
-						<div class='filter_wrap'>
-							<label for="sort_by_select" class='filter_label'>
+						<div class="filter_wrap">
+							<label for="sort_by_select" class="filter_label">
 								Сортировка:
 							</label>
-							<div class="translucent">
+							<div class="translucent sort_by_select_back">
 								<select class="sort_by_select" id="sort_by_select" name="sort">
 									<option>по популярности</option>
 									<option>сначала недорогие</option>
@@ -140,7 +140,7 @@
 							</div>
 						</div>
 						<div class="filter_wrap">
-							<span class='filter_label'>
+							<span class="filter_label">
 								Цена: <input class="range_value" type="text" name="from" value="100" disabled> руб. – <input class="range_value" type="text" name="to" value="500" disabled> руб.
 							</span>
 							<div class="translucent range">
@@ -149,60 +149,60 @@
 							</div>
 						</div>
 						<fieldset class="fat filter_wrap">
-							<legend class='filter_label'>
+							<legend class="filter_label">
 								Жирность:
 							</legend>
 							<div class="translucent">
 								<input id="no_fat" type="radio" name="fat" value="0">
 								<label for="no_fat">
-									<span class='fat_indicator'></span>
+									<span class="fat_indicator"></span>
 									0%
 								</label>
 								<input id="10_fat" type="radio" name="fat" value="10">
 								<label for="10_fat">
-									<span class='fat_indicator'></span>
+									<span class="fat_indicator"></span>
 									до 10%
 								</label>
 								<input id="30_fat" type="radio" name="fat" value="30">
 								<label for="30_fat">
-									<span class='fat_indicator'></span>
+									<span class="fat_indicator"></span>
 									до 30%
 								</label>
-								<input id="more_fat" type="radio" name="fat" value=">30">
+								<input id="more_fat" type="radio" name="fat" value=">30" disabled>
 								<label for="more_fat">
-									<span class='fat_indicator blocked'></span>
+									<span class="fat_indicator blocked"></span>
 									выше 30%
 								</label>
 							</div>
 						</fieldset>
 						<fieldset class="additive filter_wrap">
-							<legend class='filter_label'>
+							<legend class="filter_label">
 								Наполнители:
 							</legend>
 							<div class="translucent">
-								<input type="checkbox" name="chocolate" id="choco" value="chocolate">
+								<input type="checkbox" name="chocolate" id="choco" value="chocolate" disabled>
 								<label for="choco">
-									<span class='additive_indicator blocked'></span>
+									<span class="additive_indicator blocked"></span>
 									шоколадные
 								</label>
 								<input type="checkbox" name="sugar powder" id="sugar" value="sugar powder">
 								<label for="sugar">
-									<span class='additive_indicator'></span>
+									<span class="additive_indicator"></span>
 									сахарные присыпки
 								</label>
 								<input type="checkbox" name="fruits" id="fruits" value="fruits">
 								<label for="fruits">
-									<span class='additive_indicator'></span>
+									<span class="additive_indicator"></span>
 									фрукты
 								</label>
 								<input type="checkbox" name="syrups" id="syrups" value="syrups">
 								<label for="syrups">
-									<span class='additive_indicator'></span>
+									<span class="additive_indicator"></span>
 									сиропы
 								</label>
 								<input type="checkbox" name="jams" id="jams" value="jams">
 								<label for="jams">
-									<span class='additive_indicator'></span>
+									<span class="additive_indicator"></span>
 									джемы
 								</label>
 							</div>
@@ -308,13 +308,13 @@
 						</div>
 					</div>
 					<ul class="pagination">
-						<li>&lsaquo;</li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>&rsaquo;</li>
+						<li><a class="pagination_arrow disabled">&lsaquo;</a></li>
+						<li><a class="pagination_point current">1</a></li>
+						<li><a href="#" class="pagination_point">2</a></li>
+						<li><a href="#" class="pagination_point">3</a></li>
+						<li><a href="#" class="pagination_point">4</a></li>
+						<li><a href="#" class="pagination_point">5</a></li>
+						<li><a href="#" class="pagination_arrow">&rsaquo;</a></li>
 					</ul>
 				</div>
 				<footer class="main_footer clearfix">
