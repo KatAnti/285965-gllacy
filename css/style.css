@@ -688,23 +688,25 @@ body > input[type="radio"] {
 }
 
 .content_banner {
+	position: relative;
 	width: 522px;
 	padding: 14px 18px;
 	border-radius: 17px;
 	font-weight: 700;
-	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .content_banner_rasperberry, .content_banner_choco {
-	min-height: 200px;
+	min-height: 137px;
+	padding-bottom: 77px;
 }
 
 .content_banner_blog {
-	min-height: 190px;
+	min-height: 184px;
 	background-image: url("../img/strawberry_back.jpg");
 	color: #323232;
 	padding-top: 22px;
-	padding-bottom: 8px;
 }
 
 .blog_ttl:hover {
@@ -722,6 +724,7 @@ body > input[type="radio"] {
 
 .content_banner_rasperberry {
 	background-image: url("../img/banner_berry_back.jpg");
+	background-color: #7b0d22;
 }
 
 .content_banner_blog a {
@@ -777,6 +780,7 @@ body > input[type="radio"] {
 
 .content_banner_choco {
 	background-image: url("../img/banner_choco_back.jpg");
+	background-color: #3b2217;
 }
 
 .info_banners_content {
@@ -968,12 +972,18 @@ body > input[type="radio"] {
 }
 
 .contacts_form p {
-	margin-top: 16px;
+	margin-top: 0;
+	margin-bottom: -2px;
+	max-width: 200px;
+}
+
+.order_phone {
+	padding-top: 15px;
 }
 
 .bold {
 	display: inline-block;
-	padding-top: 3px;
+	padding: 3px 0;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
@@ -982,7 +992,7 @@ body > input[type="radio"] {
 .feedback {
 	box-sizing: border-box;
 	min-width: 250px;
-	margin-top: 27px;
+	margin-top: 26px;
 }
 
 .main_footer {
