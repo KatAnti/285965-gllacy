@@ -818,6 +818,7 @@ body > input[type="radio"] {
 	left: 50%;
 	margin-left: -104px;
 	margin-top: 10px;
+	border: none;
 }
 
 .product:hover::after {
@@ -835,14 +836,14 @@ body > input[type="radio"] {
 	z-index: 1;
 }
 
-.product > a {
+.product a {
 	position: relative;
 	z-index: 2;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.product > a:hover {
+.product a:hover {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
@@ -850,7 +851,7 @@ body > input[type="radio"] {
 	position: relative;
 	width: 266px;
 	height: 266px;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 }
 
 .product_label_hit {
