@@ -1292,21 +1292,16 @@ input.range_value:hover {
 	border: 2px solid #ffffff;
 }
 
-.fat input[type="radio"]:checked + label .fat_indicator::before {
+.fat_input:checked + label::before {
 	content: " ";
 	position: absolute;
-	top: 3px;
-	left: 3px;
+	top: 5px;
+	left: 4px;
 	display: block;
 	width: 12px;
 	height: 12px;
 	border-radius: 6px;
 	background-color: #ffffff;
-}
-
-.fat input[type="radio"]:checked + label .fat_indicator:hover::before {
-	top: 2px;
-	left: 2px;
 }
 
 .additive {
@@ -1343,21 +1338,16 @@ input.range_value:hover {
 	border: 2px solid #ffffff;
 }
 
-.additive input[type="checkbox"]:checked + label .additive_indicator::before {
+.additive_input:checked + label::before {
 	content: " ";
 	position: absolute;
-	top: 4px;
-	left: 3px;
+	top: 6px;
+	left: 4px;
 	display: block;
 	width: 12px;
 	height: 10px;
 	background-image: url("../img/sprite_icons.png");
 	background-position: -518px -5px;
-}
-
-.additive input[type="checkbox"]:checked + label .additive_indicator:hover::before {
-	top: 3px;
-	left: 2px;
 }
 
 .blocked {
